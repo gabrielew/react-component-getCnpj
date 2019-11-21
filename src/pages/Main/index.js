@@ -9,7 +9,6 @@ const handleSubmit = async (setStatus, setContent, cnpj) => {
       "Content-Type": "text/plain"
     }
   });
-  // console.log(res.data);
   setContent(await res.data);
   setStatus(true);
 };
